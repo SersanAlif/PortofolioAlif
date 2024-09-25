@@ -1,0 +1,321 @@
+body {
+	background: linear-gradient(#ad49e1 0%, #dd4c4f 40%, #ad49e1 100%);
+}
+.profile {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.profileImage {
+	width: 200px;
+}
+.profile h2 {
+	color: black;
+}
+.profile h4 {
+	color: black;
+}
+.Biodata {
+	background: linear-gradient(#fff 0%, #fff 40%, #ad49e1 100%);
+	padding-bottom: 60px;
+}
+.footer {
+	background-color: #fff;
+	padding-bottom: 20px;
+}
+.penghargaan {
+	padding-bottom: 20px;
+	padding-top: 30px;
+}
+.kontak a {
+	color: black;
+	font-size: 25px;
+	padding-bottom: 15px;
+}
+.watermark {
+	padding-top: 30px;
+}
+.portofolio {
+	padding-bottom: 30px;
+	padding-top: 20px;
+}
+/* Navbar styling */
+.navbar {
+	background-color: rgba(255, 255, 255, 0.3); /* Subtle background color */
+	transition: background-color 0.5s ease-in-out;
+	opacity: 0.8; /* Slightly transparent initially */
+	position: fixed; /* Fixed position to stay on top */
+	width: 100%; /* Full width */
+	top: 0; /* Stick to the top */
+	z-index: 999; /* Ensure it stays above other content */
+}
+
+/* Center the navbar content */
+.navbar-nav {
+	display: flex; /* Use Flexbox for horizontal alignment */
+	justify-content: center; /* Center horizontally */
+	width: 100%; /* Full width to center content */
+	padding-left: 0;
+	margin: 0;
+}
+
+.nav-link {
+	color: red; /* Red text color */
+	transition: color 0.3s ease-in-out; /* Smooth transition for color change */
+}
+
+.nav-link:hover {
+	color: darkred; /* Darker red when hovered */
+}
+
+/* On hover: Navbar background color changes */
+.navbar:hover {
+	background-color: rgba(255, 255, 255, 0.7); /* Slightly more solid background on hover */
+	opacity: 1; /* Fully opaque when hovered */
+}
+
+body {
+	padding-top: 60px; /* Adjust based on navbar height */
+}
+.container {
+	max-width: 400px;
+	width: 100%;
+	background: #fff;
+	padding: 15px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 14px;
+}
+
+form input,
+form textarea {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+form textarea {
+	height: 80px;
+}
+
+form button {
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	padding: 8px 15px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+form button:hover {
+	background-color: #0056b3;
+}
+
+#responseMessage {
+	margin-top: 10px;
+	font-size: 14px;
+	color: #333;
+}
+.kontak {
+	padding-top: 40px;
+}
+/* Initial transparent state */
+.custom-navbar {
+	background-color: transparent;
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
+	box-shadow: none; /* Remove shadow initially */
+}
+
+/* Solid background and shadow on scroll */
+.custom-navbar.scrolled {
+	background-color: #f8f9fa; /* Solid background color when scrolled */
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add a shadow for depth when scrolled */
+}
+
+/* Navbar link styles */
+.navbar-nav .nav-item .nav-link {
+	padding: 10px 20px;
+	color: #333;
+	font-weight: 500;
+	transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link.active {
+	color: #007bff;
+}
+
+/* Logo style */
+.navbar-brand img {
+	height: 60px;
+	transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+	transform: scale(1.1);
+}
+
+/* Mobile view adjustments */
+@media (max-width: 992px) {
+	.navbar-nav {
+		text-align: center;
+	}
+}
+/* Initial transparent state */
+.custom-navbar {
+	background-color: transparent;
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
+	box-shadow: none;
+}
+
+/* Solid background and shadow on scroll */
+.custom-navbar.scrolled {
+	background-color: #f8f9fa;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Centered logo styling for desktop */
+@media (min-width: 992px) {
+	.navbar-brand {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+/* Navbar link styles */
+.navbar-nav .nav-item .nav-link {
+	padding: 10px 20px;
+	color: #333;
+	font-weight: 500;
+	transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link.active {
+	color: #007bff;
+}
+
+/* Adjust logo to be on the left for mobile */
+@media (max-width: 991.98px) {
+	.navbar-brand {
+		position: static;
+		transform: none;
+		margin-right: auto; /* Aligns the logo to the left in mobile */
+	}
+
+	.navbar-nav {
+		text-align: center;
+	}
+}
+.back-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 99;
+	background-color: #fff;
+	border: none;
+	padding: 10px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.back-to-top:hover {
+	background-color: #ddd;
+}
+/* styles.css */
+.galeri img {
+	margin: 10px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	width: 250px;
+	height: 200px;
+	object-fit: cover;
+}
+
+.galeri .row {
+	justify-content: space-around;
+}
+.galeri-image {
+	margin: 10px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	width: 250px;
+	height: 200px;
+	object-fit: cover;
+}
+
+.galeri .row {
+	justify-content: space-around;
+}
+
+.modal-body {
+	text-align: center;
+}
+
+.modal-body img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+@keyframes fadeDown {
+	0% {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.fade-down {
+	animation: fadeDown 1s ease-in-out;
+}
+#profile-pic {
+	transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+#profile-pic:hover {
+	transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.card {
+	transition: transform 0.3s ease;
+}
+
+.card:hover {
+	transform: scale(1.05);
+}
+
+.galeri-image {
+	transition: transform 0.3s ease;
+}
+
+.galeri-image:hover {
+	transform: scale(1.05);
+}
+.card {
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+}
+
+.card:hover {
+	transform: scale(1.05);
+}
+.carousel-image {
+	border: 5px solid white; /* Adjust the width as needed */
+	border-radius: 10px; /* Optional: add some rounding to the corners */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: add a shadow effect */
+}
